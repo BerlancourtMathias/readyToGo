@@ -9,8 +9,8 @@ const App = () => {
     <div className="body">
       <header>⚛︎ Ready To Go</header>
       <div className="container">
-        <div className="column1">
-          <div className="switch1">
+        <div className="leftContainer">
+          <div className="switch">
             <button
               onClick={() => {
                 setSwitch1(true);
@@ -28,7 +28,7 @@ const App = () => {
               OFF
             </button>
           </div>
-          <div className="switch2">
+          <div className="switch">
             <button
               onClick={() => {
                 setSwitch2(true);
@@ -46,7 +46,7 @@ const App = () => {
               OFF
             </button>
           </div>
-          <div className="switch3">
+          <div className="switch">
             <button
               onClick={() => {
                 setSwitch3(true);
@@ -65,7 +65,7 @@ const App = () => {
             </button>
           </div>
         </div>
-        <div className="column2">
+        <div className="rightContainer">
           {/* <div className="displayStart"> */}
           {switch1 && switch2 && switch3 ? (
             <div className="displayStartGo">GO ! </div>
